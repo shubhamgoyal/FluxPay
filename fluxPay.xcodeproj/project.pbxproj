@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09DC0E82FEF45719C521B45E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C6408561AD4FA8E19B1DF97 /* libPods.a */; };
+		2D39AF4E1A9FA22E002D1E0A /* SecondLoginWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D39AF4D1A9FA22E002D1E0A /* SecondLoginWebViewController.m */; };
+		2D39AF511A9FC970002D1E0A /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D39AF501A9FC970002D1E0A /* PayViewController.m */; };
+		2D39AF541A9FD0FB002D1E0A /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D39AF531A9FD0FB002D1E0A /* QRCodeViewController.m */; };
+		2D39AF571AA02B25002D1E0A /* RTSpinKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D39AF561AA02B25002D1E0A /* RTSpinKitView.m */; };
+		2DE61FCC1A9DEADE0095179D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE61FCB1A9DEADE0095179D /* main.m */; };
+		2DE61FCF1A9DEADE0095179D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE61FCE1A9DEADE0095179D /* AppDelegate.m */; };
+		2DE61FD21A9DEADE0095179D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE61FD11A9DEADE0095179D /* ViewController.m */; };
+		2DE61FD51A9DEADE0095179D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE61FD31A9DEADE0095179D /* Main.storyboard */; };
+		2DE61FD71A9DEADE0095179D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE61FD61A9DEADE0095179D /* Images.xcassets */; };
+		2DE61FDA1A9DEADE0095179D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE61FD81A9DEADE0095179D /* LaunchScreen.xib */; };
+		2DE61FE61A9DEADF0095179D /* fluxPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE61FE51A9DEADF0095179D /* fluxPayTests.m */; };
+		2DE61FF11A9DEE780095179D /* DataVisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE61FF01A9DEE780095179D /* DataVisualizationViewController.m */; };
+		2DE6871F1A9E67C600CC8D4C /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6871D1A9E67C600CC8D4C /* FloatLabelTextField.swift */; };
+		2DE687201A9E67C600CC8D4C /* FloatLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6871E1A9E67C600CC8D4C /* FloatLabelTextView.swift */; };
+		2DE687451A9E702000CC8D4C /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE6873A1A9E701F00CC8D4C /* TextFieldEffects.framework */; };
+		2DE6874E1A9E702000CC8D4C /* TextFieldEffectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6874D1A9E702000CC8D4C /* TextFieldEffectsTests.swift */; };
+		2DE687511A9E702000CC8D4C /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE6873A1A9E701F00CC8D4C /* TextFieldEffects.framework */; };
+		2DE687521A9E702000CC8D4C /* TextFieldEffects.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE6873A1A9E701F00CC8D4C /* TextFieldEffects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DE687651A9E71BA00CC8D4C /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6875B1A9E71BA00CC8D4C /* HoshiTextField.swift */; };
+		2DE687661A9E71BA00CC8D4C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DE6875C1A9E71BA00CC8D4C /* Info.plist */; };
+		2DE687671A9E71BA00CC8D4C /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6875D1A9E71BA00CC8D4C /* IsaoTextField.swift */; };
+		2DE687681A9E71BA00CC8D4C /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6875E1A9E71BA00CC8D4C /* JiroTextField.swift */; };
+		2DE687691A9E71BA00CC8D4C /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6875F1A9E71BA00CC8D4C /* KaedeTextField.swift */; };
+		2DE6876A1A9E71BA00CC8D4C /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE687601A9E71BA00CC8D4C /* MadokaTextField.swift */; };
+		2DE6876B1A9E71BA00CC8D4C /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE687611A9E71BA00CC8D4C /* MinoruTextField.swift */; };
+		2DE6876C1A9E71BA00CC8D4C /* TextFieldEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE687621A9E71BA00CC8D4C /* TextFieldEffects.h */; };
+		2DE6876D1A9E71BA00CC8D4C /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE687631A9E71BA00CC8D4C /* TextFieldsEffects.swift */; };
+		2DE6876E1A9E71BA00CC8D4C /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE687641A9E71BA00CC8D4C /* YokoTextField.swift */; };
+		2DE687791A9E7DD600CC8D4C /* APDarkPadStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE687781A9E7DD600CC8D4C /* APDarkPadStyle.m */; };
+		2DE6877C1A9EA41300CC8D4C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6877B1A9EA41300CC8D4C /* LoginViewController.m */; };
+		E944C36B1A9EFAC700835D2A /* PaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E944C36A1A9EFAC700835D2A /* PaymentsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DE61FE01A9DEADF0095179D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DE61FBE1A9DEADE0095179D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE61FC51A9DEADE0095179D;
+			remoteInfo = fluxPay;
+		};
+		2DE687461A9E702000CC8D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DE61FBE1A9DEADE0095179D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE687391A9E701F00CC8D4C;
+			remoteInfo = TextFieldEffects;
+		};
+		2DE687481A9E702000CC8D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DE61FBE1A9DEADE0095179D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE61FC51A9DEADE0095179D;
+			remoteInfo = fluxPay;
+		};
+		2DE6874F1A9E702000CC8D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DE61FBE1A9DEADE0095179D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE687391A9E701F00CC8D4C;
+			remoteInfo = TextFieldEffects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DE687561A9E702000CC8D4C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DE687521A9E702000CC8D4C /* TextFieldEffects.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D39AF4C1A9FA22E002D1E0A /* SecondLoginWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLoginWebViewController.h; sourceTree = "<group>"; };
+		2D39AF4D1A9FA22E002D1E0A /* SecondLoginWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLoginWebViewController.m; sourceTree = "<group>"; };
+		2D39AF4F1A9FC970002D1E0A /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		2D39AF501A9FC970002D1E0A /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		2D39AF521A9FD0FB002D1E0A /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		2D39AF531A9FD0FB002D1E0A /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		2D39AF551AA02B25002D1E0A /* RTSpinKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSpinKitView.h; sourceTree = "<group>"; };
+		2D39AF561AA02B25002D1E0A /* RTSpinKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSpinKitView.m; sourceTree = "<group>"; };
+		2DE61FC61A9DEADE0095179D /* fluxPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fluxPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE61FCA1A9DEADE0095179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE61FCB1A9DEADE0095179D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DE61FCD1A9DEADE0095179D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DE61FCE1A9DEADE0095179D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DE61FD01A9DEADE0095179D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DE61FD11A9DEADE0095179D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DE61FD41A9DEADE0095179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DE61FD61A9DEADE0095179D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2DE61FD91A9DEADE0095179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2DE61FDF1A9DEADF0095179D /* fluxPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fluxPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE61FE41A9DEADF0095179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE61FE51A9DEADF0095179D /* fluxPayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fluxPayTests.m; sourceTree = "<group>"; };
+		2DE61FEF1A9DEE780095179D /* DataVisualizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataVisualizationViewController.h; sourceTree = "<group>"; };
+		2DE61FF01A9DEE780095179D /* DataVisualizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataVisualizationViewController.m; sourceTree = "<group>"; };
+		2DE6871D1A9E67C600CC8D4C /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		2DE6871E1A9E67C600CC8D4C /* FloatLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextView.swift; sourceTree = "<group>"; };
+		2DE6873A1A9E701F00CC8D4C /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE687441A9E702000CC8D4C /* TextFieldEffectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldEffectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE6874C1A9E702000CC8D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE6874D1A9E702000CC8D4C /* TextFieldEffectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEffectsTests.swift; sourceTree = "<group>"; };
+		2DE6875B1A9E71BA00CC8D4C /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		2DE6875C1A9E71BA00CC8D4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE6875D1A9E71BA00CC8D4C /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		2DE6875E1A9E71BA00CC8D4C /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		2DE6875F1A9E71BA00CC8D4C /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		2DE687601A9E71BA00CC8D4C /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		2DE687611A9E71BA00CC8D4C /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		2DE687621A9E71BA00CC8D4C /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		2DE687631A9E71BA00CC8D4C /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		2DE687641A9E71BA00CC8D4C /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		2DE687771A9E7DD600CC8D4C /* APDarkPadStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDarkPadStyle.h; sourceTree = "<group>"; };
+		2DE687781A9E7DD600CC8D4C /* APDarkPadStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDarkPadStyle.m; sourceTree = "<group>"; };
+		2DE6877A1A9EA41300CC8D4C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2DE6877B1A9EA41300CC8D4C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6C6408561AD4FA8E19B1DF97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E40AFD787E9046E4F66A39 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B31C6F476EEE98BB105BA3E4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E944C3691A9EFAC700835D2A /* PaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentsViewController.h; sourceTree = "<group>"; };
+		E944C36A1A9EFAC700835D2A /* PaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DE61FC31A9DEADE0095179D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DC0E82FEF45719C521B45E /* libPods.a in Frameworks */,
+				2DE687511A9E702000CC8D4C /* TextFieldEffects.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE61FDC1A9DEADF0095179D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE687361A9E701F00CC8D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE687411A9E702000CC8D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE687451A9E702000CC8D4C /* TextFieldEffects.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DE61FBD1A9DEADE0095179D = {
+			isa = PBXGroup;
+			children = (
+				2DE6875A1A9E71BA00CC8D4C /* TextFieldEffects */,
+				2DE6871C1A9E67C600CC8D4C /* FloatLabelFields */,
+				2DE61FC81A9DEADE0095179D /* fluxPay */,
+				2DE61FE21A9DEADF0095179D /* fluxPayTests */,
+				2DE6874A1A9E702000CC8D4C /* TextFieldEffectsTests */,
+				2DE61FC71A9DEADE0095179D /* Products */,
+				E19F434D9E15C488403CEC28 /* Pods */,
+				542E080D28D801AB361C1C87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2DE61FC71A9DEADE0095179D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DE61FC61A9DEADE0095179D /* fluxPay.app */,
+				2DE61FDF1A9DEADF0095179D /* fluxPayTests.xctest */,
+				2DE6873A1A9E701F00CC8D4C /* TextFieldEffects.framework */,
+				2DE687441A9E702000CC8D4C /* TextFieldEffectsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DE61FC81A9DEADE0095179D /* fluxPay */ = {
+			isa = PBXGroup;
+			children = (
+				2D39AF551AA02B25002D1E0A /* RTSpinKitView.h */,
+				2D39AF561AA02B25002D1E0A /* RTSpinKitView.m */,
+				2DE61FCD1A9DEADE0095179D /* AppDelegate.h */,
+				2DE61FCE1A9DEADE0095179D /* AppDelegate.m */,
+				2DE61FD01A9DEADE0095179D /* ViewController.h */,
+				2DE61FD11A9DEADE0095179D /* ViewController.m */,
+				2DE61FD31A9DEADE0095179D /* Main.storyboard */,
+				2D39AF4F1A9FC970002D1E0A /* PayViewController.h */,
+				2D39AF501A9FC970002D1E0A /* PayViewController.m */,
+				E944C3691A9EFAC700835D2A /* PaymentsViewController.h */,
+				E944C36A1A9EFAC700835D2A /* PaymentsViewController.m */,
+				2D39AF521A9FD0FB002D1E0A /* QRCodeViewController.h */,
+				2D39AF531A9FD0FB002D1E0A /* QRCodeViewController.m */,
+				2DE6877A1A9EA41300CC8D4C /* LoginViewController.h */,
+				2DE6877B1A9EA41300CC8D4C /* LoginViewController.m */,
+				2DE61FEF1A9DEE780095179D /* DataVisualizationViewController.h */,
+				2DE61FF01A9DEE780095179D /* DataVisualizationViewController.m */,
+				2DE61FD61A9DEADE0095179D /* Images.xcassets */,
+				2DE61FD81A9DEADE0095179D /* LaunchScreen.xib */,
+				2DE687771A9E7DD600CC8D4C /* APDarkPadStyle.h */,
+				2DE687781A9E7DD600CC8D4C /* APDarkPadStyle.m */,
+				2DE61FC91A9DEADE0095179D /* Supporting Files */,
+			);
+			path = fluxPay;
+			sourceTree = "<group>";
+		};
+		2DE61FC91A9DEADE0095179D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DE61FCA1A9DEADE0095179D /* Info.plist */,
+				2DE61FCB1A9DEADE0095179D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DE61FE21A9DEADF0095179D /* fluxPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DE61FE51A9DEADF0095179D /* fluxPayTests.m */,
+				2DE61FE31A9DEADF0095179D /* Supporting Files */,
+			);
+			path = fluxPayTests;
+			sourceTree = "<group>";
+		};
+		2DE61FE31A9DEADF0095179D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DE61FE41A9DEADF0095179D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DE6871C1A9E67C600CC8D4C /* FloatLabelFields */ = {
+			isa = PBXGroup;
+			children = (
+				2DE6871D1A9E67C600CC8D4C /* FloatLabelTextField.swift */,
+				2DE6871E1A9E67C600CC8D4C /* FloatLabelTextView.swift */,
+				2D39AF4C1A9FA22E002D1E0A /* SecondLoginWebViewController.h */,
+				2D39AF4D1A9FA22E002D1E0A /* SecondLoginWebViewController.m */,
+			);
+			path = FloatLabelFields;
+			sourceTree = "<group>";
+		};
+		2DE6874A1A9E702000CC8D4C /* TextFieldEffectsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DE6874D1A9E702000CC8D4C /* TextFieldEffectsTests.swift */,
+				2DE6874B1A9E702000CC8D4C /* Supporting Files */,
+			);
+			path = TextFieldEffectsTests;
+			sourceTree = "<group>";
+		};
+		2DE6874B1A9E702000CC8D4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DE6874C1A9E702000CC8D4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DE6875A1A9E71BA00CC8D4C /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				2DE6875B1A9E71BA00CC8D4C /* HoshiTextField.swift */,
+				2DE6875C1A9E71BA00CC8D4C /* Info.plist */,
+				2DE6875D1A9E71BA00CC8D4C /* IsaoTextField.swift */,
+				2DE6875E1A9E71BA00CC8D4C /* JiroTextField.swift */,
+				2DE6875F1A9E71BA00CC8D4C /* KaedeTextField.swift */,
+				2DE687601A9E71BA00CC8D4C /* MadokaTextField.swift */,
+				2DE687611A9E71BA00CC8D4C /* MinoruTextField.swift */,
+				2DE687621A9E71BA00CC8D4C /* TextFieldEffects.h */,
+				2DE687631A9E71BA00CC8D4C /* TextFieldsEffects.swift */,
+				2DE687641A9E71BA00CC8D4C /* YokoTextField.swift */,
+			);
+			name = TextFieldEffects;
+			path = "../../Downloads/TextFieldEffects-master/TextFieldEffects/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		542E080D28D801AB361C1C87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C6408561AD4FA8E19B1DF97 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E19F434D9E15C488403CEC28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93E40AFD787E9046E4F66A39 /* Pods.debug.xcconfig */,
+				B31C6F476EEE98BB105BA3E4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DE687371A9E701F00CC8D4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE6876C1A9E71BA00CC8D4C /* TextFieldEffects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2DE61FC51A9DEADE0095179D /* fluxPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE61FE91A9DEADF0095179D /* Build configuration list for PBXNativeTarget "fluxPay" */;
+			buildPhases = (
+				9E3D5513FDF8C805DF31443F /* Check Pods Manifest.lock */,
+				2DE61FC21A9DEADE0095179D /* Sources */,
+				2DE61FC31A9DEADE0095179D /* Frameworks */,
+				2DE61FC41A9DEADE0095179D /* Resources */,
+				2CE77434CDA991F1BB6B2E11 /* Copy Pods Resources */,
+				2DE687561A9E702000CC8D4C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DE687501A9E702000CC8D4C /* PBXTargetDependency */,
+			);
+			name = fluxPay;
+			productName = fluxPay;
+			productReference = 2DE61FC61A9DEADE0095179D /* fluxPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DE61FDE1A9DEADF0095179D /* fluxPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE61FEC1A9DEADF0095179D /* Build configuration list for PBXNativeTarget "fluxPayTests" */;
+			buildPhases = (
+				2DE61FDB1A9DEADF0095179D /* Sources */,
+				2DE61FDC1A9DEADF0095179D /* Frameworks */,
+				2DE61FDD1A9DEADF0095179D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DE61FE11A9DEADF0095179D /* PBXTargetDependency */,
+			);
+			name = fluxPayTests;
+			productName = fluxPayTests;
+			productReference = 2DE61FDF1A9DEADF0095179D /* fluxPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DE687391A9E701F00CC8D4C /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE687531A9E702000CC8D4C /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				2DE687351A9E701F00CC8D4C /* Sources */,
+				2DE687361A9E701F00CC8D4C /* Frameworks */,
+				2DE687371A9E701F00CC8D4C /* Headers */,
+				2DE687381A9E701F00CC8D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 2DE6873A1A9E701F00CC8D4C /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2DE687431A9E702000CC8D4C /* TextFieldEffectsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE687571A9E702000CC8D4C /* Build configuration list for PBXNativeTarget "TextFieldEffectsTests" */;
+			buildPhases = (
+				2DE687401A9E702000CC8D4C /* Sources */,
+				2DE687411A9E702000CC8D4C /* Frameworks */,
+				2DE687421A9E702000CC8D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DE687471A9E702000CC8D4C /* PBXTargetDependency */,
+				2DE687491A9E702000CC8D4C /* PBXTargetDependency */,
+			);
+			name = TextFieldEffectsTests;
+			productName = TextFieldEffectsTests;
+			productReference = 2DE687441A9E702000CC8D4C /* TextFieldEffectsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DE61FBE1A9DEADE0095179D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Rameez Remsudeen";
+				TargetAttributes = {
+					2DE61FC51A9DEADE0095179D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2DE61FDE1A9DEADF0095179D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2DE61FC51A9DEADE0095179D;
+					};
+					2DE687391A9E701F00CC8D4C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2DE687431A9E702000CC8D4C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2DE61FC51A9DEADE0095179D;
+					};
+				};
+			};
+			buildConfigurationList = 2DE61FC11A9DEADE0095179D /* Build configuration list for PBXProject "fluxPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DE61FBD1A9DEADE0095179D;
+			productRefGroup = 2DE61FC71A9DEADE0095179D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DE61FC51A9DEADE0095179D /* fluxPay */,
+				2DE61FDE1A9DEADF0095179D /* fluxPayTests */,
+				2DE687391A9E701F00CC8D4C /* TextFieldEffects */,
+				2DE687431A9E702000CC8D4C /* TextFieldEffectsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DE61FC41A9DEADE0095179D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE61FD51A9DEADE0095179D /* Main.storyboard in Resources */,
+				2DE61FDA1A9DEADE0095179D /* LaunchScreen.xib in Resources */,
+				2DE61FD71A9DEADE0095179D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE61FDD1A9DEADF0095179D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE687381A9E701F00CC8D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE687661A9E71BA00CC8D4C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE687421A9E702000CC8D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE77434CDA991F1BB6B2E11 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3D5513FDF8C805DF31443F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DE61FC21A9DEADE0095179D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE6877C1A9EA41300CC8D4C /* LoginViewController.m in Sources */,
+				2DE61FD21A9DEADE0095179D /* ViewController.m in Sources */,
+				2D39AF541A9FD0FB002D1E0A /* QRCodeViewController.m in Sources */,
+				2DE61FF11A9DEE780095179D /* DataVisualizationViewController.m in Sources */,
+				2D39AF4E1A9FA22E002D1E0A /* SecondLoginWebViewController.m in Sources */,
+				2DE61FCF1A9DEADE0095179D /* AppDelegate.m in Sources */,
+				2D39AF571AA02B25002D1E0A /* RTSpinKitView.m in Sources */,
+				2DE687201A9E67C600CC8D4C /* FloatLabelTextView.swift in Sources */,
+				2DE687791A9E7DD600CC8D4C /* APDarkPadStyle.m in Sources */,
+				2DE6871F1A9E67C600CC8D4C /* FloatLabelTextField.swift in Sources */,
+				E944C36B1A9EFAC700835D2A /* PaymentsViewController.m in Sources */,
+				2DE61FCC1A9DEADE0095179D /* main.m in Sources */,
+				2D39AF511A9FC970002D1E0A /* PayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE61FDB1A9DEADF0095179D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE61FE61A9DEADF0095179D /* fluxPayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE687351A9E701F00CC8D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE6876A1A9E71BA00CC8D4C /* MadokaTextField.swift in Sources */,
+				2DE6876E1A9E71BA00CC8D4C /* YokoTextField.swift in Sources */,
+				2DE687651A9E71BA00CC8D4C /* HoshiTextField.swift in Sources */,
+				2DE687671A9E71BA00CC8D4C /* IsaoTextField.swift in Sources */,
+				2DE6876D1A9E71BA00CC8D4C /* TextFieldsEffects.swift in Sources */,
+				2DE687691A9E71BA00CC8D4C /* KaedeTextField.swift in Sources */,
+				2DE687681A9E71BA00CC8D4C /* JiroTextField.swift in Sources */,
+				2DE6876B1A9E71BA00CC8D4C /* MinoruTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE687401A9E702000CC8D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE6874E1A9E702000CC8D4C /* TextFieldEffectsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DE61FE11A9DEADF0095179D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE61FC51A9DEADE0095179D /* fluxPay */;
+			targetProxy = 2DE61FE01A9DEADF0095179D /* PBXContainerItemProxy */;
+		};
+		2DE687471A9E702000CC8D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE687391A9E701F00CC8D4C /* TextFieldEffects */;
+			targetProxy = 2DE687461A9E702000CC8D4C /* PBXContainerItemProxy */;
+		};
+		2DE687491A9E702000CC8D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE61FC51A9DEADE0095179D /* fluxPay */;
+			targetProxy = 2DE687481A9E702000CC8D4C /* PBXContainerItemProxy */;
+		};
+		2DE687501A9E702000CC8D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE687391A9E701F00CC8D4C /* TextFieldEffects */;
+			targetProxy = 2DE6874F1A9E702000CC8D4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DE61FD31A9DEADE0095179D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DE61FD41A9DEADE0095179D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DE61FD81A9DEADE0095179D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DE61FD91A9DEADE0095179D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DE61FE71A9DEADF0095179D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2DE61FE81A9DEADF0095179D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DE61FEA1A9DEADF0095179D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E40AFD787E9046E4F66A39 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fluxPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DE61FEB1A9DEADF0095179D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B31C6F476EEE98BB105BA3E4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = fluxPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2DE61FED1A9DEADF0095179D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fluxPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fluxPay.app/fluxPay";
+			};
+			name = Debug;
+		};
+		2DE61FEE1A9DEADF0095179D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = fluxPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fluxPay.app/fluxPay";
+			};
+			name = Release;
+		};
+		2DE687541A9E702000CC8D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TextFieldEffects/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DE687551A9E702000CC8D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TextFieldEffects/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DE687581A9E702000CC8D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TextFieldEffectsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fluxPay.app/fluxPay";
+			};
+			name = Debug;
+		};
+		2DE687591A9E702000CC8D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TextFieldEffectsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fluxPay.app/fluxPay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DE61FC11A9DEADE0095179D /* Build configuration list for PBXProject "fluxPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE61FE71A9DEADF0095179D /* Debug */,
+				2DE61FE81A9DEADF0095179D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE61FE91A9DEADF0095179D /* Build configuration list for PBXNativeTarget "fluxPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE61FEA1A9DEADF0095179D /* Debug */,
+				2DE61FEB1A9DEADF0095179D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE61FEC1A9DEADF0095179D /* Build configuration list for PBXNativeTarget "fluxPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE61FED1A9DEADF0095179D /* Debug */,
+				2DE61FEE1A9DEADF0095179D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE687531A9E702000CC8D4C /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE687541A9E702000CC8D4C /* Debug */,
+				2DE687551A9E702000CC8D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE687571A9E702000CC8D4C /* Build configuration list for PBXNativeTarget "TextFieldEffectsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE687581A9E702000CC8D4C /* Debug */,
+				2DE687591A9E702000CC8D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DE61FBE1A9DEADE0095179D /* Project object */;
+}
