@@ -34,4 +34,20 @@
 }
 */
 
+
+- (IBAction)buttonPressActions:(id)sender {
+    
+    
+    NSMutableURLRequest  * request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://hax.sg:8000/initiate_transaction?merchant_number=6592231973&amount=700&curr=SGD"] cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:10];
+    
+    [request setHTTPMethod: @"GET"];
+    NSError *requestError;
+    NSURLResponse *urlResponse = nil;
+    
+    
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    
+    
+}
+
 @end

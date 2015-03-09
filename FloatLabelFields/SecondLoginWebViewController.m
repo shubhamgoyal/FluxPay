@@ -9,6 +9,7 @@
 #import "SecondLoginWebViewController.h"
 #import <MBProgressHUD.h>
 #import "RTSpinKitView.h"
+#import "BillViewController.h"
 
 @interface SecondLoginWebViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -17,6 +18,8 @@
 @property (strong, nonatomic) RTSpinKitView *spinner;
 @property (strong, nonatomic)  MBProgressHUD *hud;
 @property BOOL isSpinning;
+
+@property BOOL shouldSegue;
 
 @end
 
@@ -35,7 +38,22 @@
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:4.0]];
     
+    [self addObserver:self forKeyPath:@"shouldSegue" options:0 context:nil];
     
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:<#(SEL)#> name:<#(NSString *)#> object:<#(id)#>]
+    
+    _shouldSegue = NO;
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (object == self && [keyPath isEqualToString: @"shouldSegue"])
+    {
+        BillViewController * bill = [self.storyboard instantiateViewControllerWithIdentifier:@"bill"];
+        [self.navigationController pushViewController:(UIViewController *)bill animated:YES];
+        NSLog(@"hji");
+        
+    }
 }
 
 -(void) startSpinning
@@ -107,10 +125,10 @@
     
     if ([[[request mainDocumentURL]absoluteString] containsString:@"success"]) {
         
-        [self startSpinning];
+        _shouldSegue = YES;
         
-                
         return NO;
+
         
     }
     
